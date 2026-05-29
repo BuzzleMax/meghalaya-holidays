@@ -33,8 +33,8 @@ const Navbar = () => {
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 z-50 rounded-2xl transition-all duration-300 ${
           isScrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-lg border border-gray-100"
-            : "bg-transparent"
+            ? "bg-glass-dark backdrop-blur-xl shadow-glass border border-white/30"
+            : "bg-glass-light backdrop-blur-md border border-white/20"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
@@ -60,7 +60,7 @@ const Navbar = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
-                  className="relative px-4 py-2.5 rounded-lg text-text hover:text-primary transition-colors group"
+                  className="relative px-4 py-2.5 rounded-lg text-text hover:text-primary transition-colors group font-medium"
                 >
                   <span className="flex items-center space-x-2">
                     <link.icon className="w-4 h-4" />
@@ -76,7 +76,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
-              className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all text-sm sm:text-base"
+              className="hidden md:flex items-center space-x-2 btn-primary px-6 py-3 rounded-xl shadow-lg shadow-accent/30 text-sm sm:text-base"
             >
               <Sparkles className="w-4 h-4" />
               <span>Plan My Trip</span>

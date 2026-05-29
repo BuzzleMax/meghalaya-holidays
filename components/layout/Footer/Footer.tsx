@@ -64,7 +64,7 @@ const Footer = () => {
           {/* Brand Section */}
           <motion.div variants={itemVariants} className="space-y-4 sm:space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-accent to-accent-glow rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-accent to-accent-glow rounded-xl flex items-center justify-center shadow-lg shadow-accent/30">
                 <MapPin className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
               </div>
               <div>
@@ -157,7 +157,7 @@ const Footer = () => {
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white px-4 py-3 rounded-xl font-semibold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all text-sm sm:text-base min-h-[48px]"
+              className="flex items-center justify-center space-x-2 btn-primary px-4 py-3 rounded-xl font-semibold shadow-lg shadow-accent/30 text-sm sm:text-base min-h-[48px]"
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>Chat on WhatsApp</span>
@@ -172,7 +172,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="mt-12 sm:mt-16 pt-8 border-t border-white/10"
         >
-          <div className="bg-white/5 rounded-2xl p-4 sm:p-6 md:p-8">
+          <div className="glass-card rounded-2xl p-4 sm:p-6 md:p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
               <div>
                 <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2">Subscribe to Our Newsletter</h4>
@@ -188,7 +188,7 @@ const Footer = () => {
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
                   transition={{ duration: 0.2 }}
-                  className="px-6 py-3 bg-gradient-to-r from-accent to-accent-glow rounded-xl font-semibold flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-accent/30 transition-all text-sm sm:text-base min-h-[48px]"
+                  className="px-6 py-3 btn-primary rounded-xl font-semibold flex items-center justify-center space-x-2 text-sm sm:text-base min-h-[48px]"
                 >
                   <Send className="w-4 h-4" />
                   <span>Subscribe</span>

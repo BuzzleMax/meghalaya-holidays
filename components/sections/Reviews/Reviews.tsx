@@ -70,7 +70,7 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-b from-gray-50 to-background overflow-hidden">
+    <section className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-b from-background-dark to-background overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <SectionHeader 
           title="What Our"
@@ -93,10 +93,10 @@ const Reviews = () => {
                 variants={cardVariants}
                 whileHover={{ 
                   y: -4,
-                  boxShadow: "0 25px 50px -12px rgba(245, 158, 11, 0.25)"
+                  boxShadow: "0 25px 50px -12px rgba(255, 107, 53, 0.25)"
                 }}
                 transition={{ duration: 0.3 }}
-                className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white rounded-2xl p-5 sm:p-6 shadow-lg border border-gray-100 hover:border-accent/40 transition-all duration-300 relative group"
+                className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-background-card rounded-2xl p-5 sm:p-6 premium-shadow border border-gray-100 hover:border-accent/40 transition-all duration-300 relative group"
               >
                 {/* Quote Icon */}
                 <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -124,7 +124,7 @@ const Reviews = () => {
                   />
                   <div>
                     <h4 className="text-base font-semibold text-text">{review.name}</h4>
-                    <p className="text-sm text-text-light">{review.location}</p>
+                    <p className="text-sm text-text-muted">{review.location}</p>
                   </div>
                 </div>
               </motion.div>
@@ -137,10 +137,10 @@ const Reviews = () => {
                 variants={cardVariants}
                 whileHover={{ 
                   y: -4,
-                  boxShadow: "0 25px 50px -12px rgba(245, 158, 11, 0.25)"
+                  boxShadow: "0 25px 50px -12px rgba(255, 107, 53, 0.25)"
                 }}
                 transition={{ duration: 0.3 }}
-                className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white rounded-2xl p-5 sm:p-6 shadow-lg border border-gray-100 hover:border-accent/40 transition-all duration-300 relative group"
+                className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-background-card rounded-2xl p-5 sm:p-6 premium-shadow border border-gray-100 hover:border-accent/40 transition-all duration-300 relative group"
               >
                 {/* Quote Icon */}
                 <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -168,7 +168,7 @@ const Reviews = () => {
                   />
                   <div>
                     <h4 className="text-base font-semibold text-text">{review.name}</h4>
-                    <p className="text-sm text-text-light">{review.location}</p>
+                    <p className="text-sm text-text-muted">{review.location}</p>
                   </div>
                 </div>
               </motion.div>
@@ -177,8 +177,8 @@ const Reviews = () => {
         </div>
 
         {/* Gradient Fade Edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-r from-background-dark to-transparent pointer-events-none z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-32 bg-gradient-to-l from-background-dark to-transparent pointer-events-none z-10" />
       </div>
     </section>
   );

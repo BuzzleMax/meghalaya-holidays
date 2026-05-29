@@ -109,7 +109,7 @@ const TourPackages = () => {
               variants={cardVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3 }}
-              className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:border-accent/40 hover:shadow-2xl transition-all duration-300"
+              className="group bg-background-card rounded-3xl premium-shadow overflow-hidden border border-gray-100 hover:border-accent/40 transition-all duration-300"
             >
               {/* Image Section */}
               <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
@@ -124,20 +124,20 @@ const TourPackages = () => {
                 
                 {/* Badges */}
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 flex gap-1.5 sm:gap-2">
-                  <div className="bg-accent text-white px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
+                  <div className="bg-accent text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-accent/30">
                     {pkg.duration}
                   </div>
-                  <div className="bg-white/90 backdrop-blur-sm text-primary px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
+                  <div className="glass-card text-primary px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
                     {pkg.price}
                   </div>
                 </div>
 
                 {/* Rating */}
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 flex items-center space-x-2">
-                  <div className="flex items-center bg-white/90 backdrop-blur-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full">
-                    <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent fill-accent" />
-                    <span className="ml-1 font-semibold text-text text-xs sm:text-sm">{pkg.rating}</span>
-                    <span className="ml-1 text-text-light text-xs">({pkg.reviews})</span>
+                  <div className="flex items-center glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
+                    <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent fill-accent" />
+                    <span className="ml-1.5 font-semibold text-text text-xs sm:text-sm">{pkg.rating}</span>
+                    <span className="ml-1 text-text-muted text-xs">({pkg.reviews})</span>
                   </div>
                 </div>
               </div>
@@ -149,12 +149,12 @@ const TourPackages = () => {
 
                 {/* Quick Info */}
                 <div className="flex flex-wrap gap-2 sm:gap-4 mb-4">
-                  <div className="flex items-center text-text-light text-xs sm:text-sm">
-                    <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 text-primary" />
+                  <div className="flex items-center text-text-muted text-xs sm:text-sm font-medium">
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 text-primary" />
                     {pkg.groupSize} travelers
                   </div>
-                  <div className="flex items-center text-text-light text-xs sm:text-sm">
-                    <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 text-primary" />
+                  <div className="flex items-center text-text-muted text-xs sm:text-sm font-medium">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 text-primary" />
                     {pkg.bestTime}
                   </div>
                 </div>
@@ -167,8 +167,8 @@ const TourPackages = () => {
                   </h4>
                   <ul className="space-y-1.5">
                     {pkg.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-sm text-text-light flex items-start">
-                        <span className="text-accent mr-2">•</span>
+                      <li key={idx} className="text-sm text-text-muted flex items-start">
+                        <span className="text-accent mr-2 font-bold">•</span>
                         {highlight}
                       </li>
                     ))}
@@ -195,14 +195,10 @@ const TourPackages = () => {
                   </div>
                 </div>
 
-                <Button 
-                  variant="gradient" 
-                  size="lg" 
-                  className="w-full group-hover:from-accent group-hover:to-accent-glow"
-                  icon={ArrowRight}
-                >
-                  View Full Plan
-                </Button>
+                <button className="w-full btn-primary px-6 py-4 rounded-xl font-semibold shadow-lg shadow-accent/30 flex items-center justify-center space-x-2">
+                  <span>View Full Plan</span>
+                  <ArrowRight className="w-5 h-5" />
+                </button>
               </div>
             </motion.div>
           ))}
