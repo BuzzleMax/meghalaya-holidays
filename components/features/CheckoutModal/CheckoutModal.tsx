@@ -340,7 +340,7 @@ ${travelNotes || "No additional notes"}
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="hidden md:block bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto border border-white/20"
+            className="hidden md:block bg-white/95 backdrop-blur-glass rounded-3xl shadow-glass w-full max-w-3xl max-h-[90vh] overflow-y-auto border border-white/20"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
@@ -508,7 +508,7 @@ ${travelNotes || "No additional notes"}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleWhatsAppBooking}
-                className="w-full flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white py-4 rounded-xl font-semibold shadow-lg shadow-accent/30 hover:shadow-accent/50 transition-all"
+                className="w-full flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white py-4 rounded-xl font-semibold shadow-glow hover:shadow-accent/50 transition-all"
               >
                 <MessageCircle className="w-6 h-6" />
                 <span>Confirm via WhatsApp</span>

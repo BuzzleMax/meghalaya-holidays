@@ -33,8 +33,8 @@ const Navbar = () => {
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 z-50 rounded-2xl transition-all duration-300 ${
           isScrolled
-            ? "bg-glass-dark backdrop-blur-xl shadow-glass border border-white/30"
-            : "bg-glass-light backdrop-blur-md border border-white/20"
+            ? "bg-white/90 backdrop-blur-glass shadow-glass border border-white/20"
+            : "bg-white/70 backdrop-blur-glass shadow-glass border border-white/30"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
@@ -43,12 +43,15 @@ const Navbar = () => {
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3"
             >
-              <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-lg">
                 <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <span className="text-base sm:text-lg font-bold text-primary">Meghalaya Holidays</span>
+              <div className="flex flex-col">
+                <span className="text-base sm:text-lg font-bold text-primary leading-tight">Meghalaya Holidays</span>
+                <span className="text-xs text-text-light hidden sm:block">Premium Travel Experiences</span>
+              </div>
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -60,7 +63,7 @@ const Navbar = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
-                  className="relative px-4 py-2.5 rounded-lg text-text hover:text-primary transition-colors group font-medium"
+                  className="relative px-4 py-2.5 rounded-lg text-text hover:text-primary transition-colors group"
                 >
                   <span className="flex items-center space-x-2">
                     <link.icon className="w-4 h-4" />
@@ -76,7 +79,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
-              className="hidden md:flex items-center space-x-2 btn-primary px-6 py-3 rounded-xl shadow-lg shadow-accent/30 text-sm sm:text-base"
+              className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white px-6 py-3 rounded-xl font-semibold shadow-glow hover:shadow-accent/50 transition-all text-sm sm:text-base"
             >
               <Sparkles className="w-4 h-4" />
               <span>Plan My Trip</span>
@@ -130,7 +133,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white px-6 py-4 rounded-xl font-semibold shadow-lg text-sm sm:text-base min-h-[52px]"
+                className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white px-6 py-4 rounded-xl font-semibold shadow-glow text-sm sm:text-base min-h-[52px]"
               >
                 <Sparkles className="w-5 h-5" />
                 <span>Plan My Trip</span>

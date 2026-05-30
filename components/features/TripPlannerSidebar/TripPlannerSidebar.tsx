@@ -90,7 +90,7 @@ const TripPlannerSidebar = () => {
       {/* Toggle Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed right-4 sm:right-6 bottom-4 sm:bottom-6 z-50 bg-gradient-to-r from-primary to-primary-light text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-all"
+        className="fixed right-4 sm:right-6 bottom-4 sm:bottom-6 z-50 bg-gradient-to-r from-primary to-primary-light text-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-glow hover:shadow-primary/50 transition-all"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -126,7 +126,7 @@ const TripPlannerSidebar = () => {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="fixed md:static right-0 bottom-0 md:top-0 h-[85vh] md:h-full w-full md:w-96 bg-white shadow-2xl z-50 md:z-40 border-t md:border-l border-gray-100 overflow-y-auto rounded-t-3xl md:rounded-none"
+              className="fixed md:static right-0 bottom-0 md:top-0 h-[85vh] md:h-full w-full md:w-96 bg-white shadow-glass z-50 md:z-40 border-t md:border-l border-gray-100 overflow-y-auto rounded-t-3xl md:rounded-none"
             >
             <div className="p-4 sm:p-6">
               {/* Header */}
@@ -178,7 +178,7 @@ const TripPlannerSidebar = () => {
                             key={service.id}
                             variants={itemVariants}
                             layout
-                            className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100 hover:border-primary/30 transition-all"
+                            className="bg-gray-50 rounded-xl p-3 sm:p-4 border border-gray-100 hover:border-primary/30 hover:shadow-card transition-all"
                           >
                             <div className="flex items-start justify-between">
                               <div className="flex items-start space-x-3">
@@ -257,7 +257,7 @@ const TripPlannerSidebar = () => {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white py-3 sm:py-4 rounded-xl font-semibold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all text-sm sm:text-base"
+                  className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-glow text-white py-3 sm:py-4 rounded-xl font-semibold shadow-glow hover:shadow-accent/40 transition-all text-sm sm:text-base"
                 >
                   <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Finalize Booking</span>

@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-b from-background to-background-dark">
+    <section className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-b from-background to-gray-50">
       <div className="max-w-7xl mx-auto">
         <SectionHeader 
           title="Why"
@@ -63,10 +63,10 @@ const WhyChooseUs = () => {
               variants={cardVariants}
               whileHover={{ 
                 y: -4,
-                boxShadow: "0 20px 40px -10px rgba(27, 67, 50, 0.15)"
+                boxShadow: "0 20px 40px -10px rgba(18, 53, 36, 0.15)"
               }}
               transition={{ duration: 0.3 }}
-              className="group glass-card rounded-2xl p-6 sm:p-8 border border-white/20 hover:border-primary/30 transition-all duration-300 relative overflow-hidden"
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-100 hover:border-primary/30 hover:shadow-card-hover transition-all duration-300 relative overflow-hidden"
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-text mb-3 group-hover:text-primary transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-base text-text-muted leading-relaxed">
+                <p className="text-base text-text-light leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -97,12 +97,12 @@ const WhyChooseUs = () => {
           transition={{ delay: 0.4 }}
           className="mt-12 sm:mt-16 text-center"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 glass-card px-6 sm:px-8 py-4 sm:py-5 rounded-full shadow-lg">
+          <div className="inline-flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 bg-white px-4 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg border border-gray-100">
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-accent fill-accent"
+                  className="w-4 h-4 sm:w-5 sm:h-5 text-accent fill-accent"
                   viewBox="0 0 20 20"
                 >
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -110,8 +110,8 @@ const WhyChooseUs = () => {
               ))}
             </div>
             <span className="text-text font-semibold text-sm sm:text-base">500+ Happy Travelers</span>
-            <span className="text-text-muted hidden sm:inline">•</span>
-            <span className="text-text-muted text-sm sm:text-base">4.9/5 Average Rating</span>
+            <span className="text-text-light hidden sm:inline">•</span>
+            <span className="text-text-light text-sm sm:text-base">4.9/5 Average Rating</span>
           </div>
         </motion.div>
       </div>

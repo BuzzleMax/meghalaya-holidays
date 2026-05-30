@@ -25,7 +25,7 @@ const BookingTabs = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-5xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-gray-100"
+        className="max-w-5xl mx-auto bg-white/95 backdrop-blur-glass rounded-2xl sm:rounded-3xl shadow-glass overflow-hidden border border-white/40"
       >
         {/* Tab Headers */}
         <div className="flex border-b border-gray-100">
@@ -143,7 +143,7 @@ const BookingTabs = () => {
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                     transition={{ duration: 0.2 }}
-                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg shadow-accent/30 hover:shadow-accent/50 transition-all min-h-[52px]"
+                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-glow hover:shadow-accent/50 transition-all min-h-[52px]"
                   >
                     <Search className="w-5 h-5" />
                     <span className="text-base">Search Cabs</span>
@@ -222,7 +222,7 @@ const BookingTabs = () => {
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                     transition={{ duration: 0.2 }}
-                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg shadow-accent/30 hover:shadow-accent/50 transition-all min-h-[52px]"
+                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-glow hover:shadow-accent/50 transition-all min-h-[52px]"
                   >
                     <Search className="w-5 h-5" />
                     <span className="text-base">Explore Packages</span>
@@ -299,7 +299,7 @@ const BookingTabs = () => {
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                     transition={{ duration: 0.2 }}
-                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg shadow-accent/30 hover:shadow-accent/50 transition-all min-h-[52px]"
+                    className="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-accent to-accent-glow text-white px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-glow hover:shadow-accent/50 transition-all min-h-[52px]"
                   >
                     <Search className="w-5 h-5" />
                     <span className="text-base">Find Stays</span>
