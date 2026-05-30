@@ -16,6 +16,9 @@ const nextConfig = {
   
   // Ensure trailing slash handling works correctly
   trailingSlash: true,
+  
+  // Disable strict mode for better compatibility
+  reactStrictMode: false,
 };
 
 export default nextConfig;
